@@ -1,0 +1,14 @@
+site_name: VirtualDocs – API Testing for Healthcare SaaS
+theme:
+  name: material
+
+nav:
+  - Overview: index.md
+  - Healthcare Context: healthcare-context.md
+  - Getting Started: getting-started.md
+  - CLI Usage: cli-usage.md
+  - SDK Reference: sdk-reference.md
+  - Auth Handling: auth-handling.md
+  - Examples: test-examples.md
+  - Config Guide: config-guide.md
+  - FAQ: faq.md
