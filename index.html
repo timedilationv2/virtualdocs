@@ -41,6 +41,8 @@
       
     
     
+      <link rel="stylesheet" href="assets/stylesheets/custom.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -59,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#virtualdocs-api-and-generative-ai-testing-for-saas-platforms" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -67,9 +74,7 @@
     
       
 
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="VirtualDocs – API Testing for Healthcare SaaS" class="md-header__button md-logo" aria-label="VirtualDocs – API Testing for Healthcare SaaS" data-md-component="logo">
       
@@ -153,6 +158,188 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="healthcare-context/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Healthcare Context
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="getting-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="cli-usage/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CLI Usage
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="sdk-reference/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  SDK Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="auth-handling/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Auth Handling
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="test-examples/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Examples
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="config-guide/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Config Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -166,8 +353,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="VirtualDocs – API Testing for Healthcare SaaS" class="md-nav__button md-logo" aria-label="VirtualDocs – API Testing for Healthcare SaaS" data-md-component="logo">
       
@@ -193,6 +384,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -205,6 +411,112 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purpose
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Audience
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Capabilities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Capabilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-api-test-design-yaml-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. API Test Design (YAML / SDK)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-genai-prompt-testing-planned-sdk-yaml-spec" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. GenAI Prompt Testing (Planned SDK / YAML Spec)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-execution-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Execution Environment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Authentication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-output-reporting-planned" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Output &amp; Reporting (Planned)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-structure-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Structure Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -393,22 +705,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -418,9 +714,70 @@
 
 
 
-  <h1>Overview</h1>
-
-
+<h1 id="virtualdocs-api-and-generative-ai-testing-for-saas-platforms">VirtualDocs – API and Generative AI Testing for SaaS Platforms</h1>
+<p>VirtualDocs is a documentation system and execution model designed for modern engineering teams testing mission-critical APIs and large-scale Generative AI interfaces.</p>
+<p>This documentation provides a reference-level, no-nonsense framework for defining, validating, and managing tests across microservices, AI endpoints, and multi-environment deployments. Whether you're testing REST APIs, validating JSON responses, benchmarking token outputs from language models, or integrating with CI/CD pipelines — VirtualDocs is designed to scale.</p>
+<hr />
+<h2 id="purpose">Purpose</h2>
+<p>Modern software systems increasingly rely on deeply interconnected services and AI systems. The complexity of these integrations demands not just correctness, but resilience, reproducibility, and observability across all surfaces.</p>
+<p>VirtualDocs is focused on:</p>
+<ul>
+<li>Enabling testable, predictable behavior in both deterministic APIs and probabilistic AI systems</li>
+<li>Supporting regulated environments where auditability and traceability are required (healthcare, finance, govtech)</li>
+<li>Providing clean and developer-centric tooling with real-world flexibility</li>
+</ul>
+<hr />
+<h2 id="audience">Audience</h2>
+<p>This documentation is intended for:</p>
+<ul>
+<li>Backend developers maintaining SaaS microservices or domain APIs</li>
+<li>ML engineers deploying or fine-tuning GenAI models behind public endpoints</li>
+<li>QA and DevOps engineers building automated test suites for infrastructure validation</li>
+<li>Technical leads responsible for compliance, stability, and monitoring of live services</li>
+</ul>
+<hr />
+<h2 id="core-capabilities">Core Capabilities</h2>
+<h3 id="1-api-test-design-yaml-sdk">1. API Test Design (YAML / SDK)</h3>
+<ul>
+<li>Human-readable YAML test definitions</li>
+<li>Request-response validation with schema support</li>
+<li>Header and body assertions</li>
+<li>Status code verification</li>
+<li>Custom test naming, grouping, and tagging</li>
+</ul>
+<h3 id="2-genai-prompt-testing-planned-sdk-yaml-spec">2. GenAI Prompt Testing (Planned SDK / YAML Spec)</h3>
+<ul>
+<li>Prompt and completion structure definitions</li>
+<li>Token budget constraints</li>
+<li>Latency benchmarking</li>
+<li>Output matching (regex, semantic match, exact string)</li>
+<li>Hallucination detection workflows (planned)</li>
+<li>System prompt conditioning tests</li>
+</ul>
+<h3 id="3-execution-environment">3. Execution Environment</h3>
+<ul>
+<li>Environment variable support (<code>.env</code>, CI secrets)</li>
+<li>Profile switching (staging, production, preview)</li>
+<li>Support for test bundles and batch runs</li>
+<li>CLI-based execution (planned)</li>
+<li>Python SDK-based test automation</li>
+</ul>
+<h3 id="4-authentication">4. Authentication</h3>
+<ul>
+<li>Bearer Token</li>
+<li>OAuth2 with token injection</li>
+<li>Dynamic token fetching via pre-request hooks</li>
+<li>Header templates per environment</li>
+</ul>
+<h3 id="5-output-reporting-planned">5. Output &amp; Reporting (Planned)</h3>
+<ul>
+<li>Terminal output with summary tables</li>
+<li>JSON output for CI consumption</li>
+<li>Future: HTML or markdown reports with pass/fail visualization</li>
+<li>CI pipeline integration (GitHub Actions, CircleCI, GitLab, Jenkins)</li>
+</ul>
+<hr />
+<h2 id="file-structure-example">File Structure Example</h2>
 
 
 
@@ -469,7 +826,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "content.code.annotate"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
