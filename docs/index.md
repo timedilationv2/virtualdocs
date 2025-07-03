@@ -1,75 +1,51 @@
-# VirtualDocs – API and Generative AI Testing for SaaS Platforms
+# VirtualDocs – API and GenAI Testing for SaaS Platforms
 
-VirtualDocs is a documentation system and execution model designed for modern engineering teams testing mission-critical APIs and large-scale Generative AI interfaces.
+VirtualDocs is a documentation system and execution model designed for engineering teams testing mission-critical APIs and generative AI endpoints.
 
-This documentation provides a reference-level, no-nonsense framework for defining, validating, and managing tests across microservices, AI endpoints, and multi-environment deployments. Whether you're testing REST APIs, validating JSON responses, benchmarking token outputs from language models, or integrating with CI/CD pipelines — VirtualDocs is designed to scale.
-
----
-
-## Purpose
-
-Modern software systems increasingly rely on deeply interconnected services and AI systems. The complexity of these integrations demands not just correctness, but resilience, reproducibility, and observability across all surfaces.
-
-VirtualDocs is focused on:
-
-- Enabling testable, predictable behavior in both deterministic APIs and probabilistic AI systems
-- Supporting regulated environments where auditability and traceability are required (healthcare, finance, govtech)
-- Providing clean and developer-centric tooling with real-world flexibility
+This documentation provides a reference framework for defining, validating, and managing tests across microservices, AI endpoints, and CI/CD environments.
 
 ---
 
-## Audience
+=== "Purpose"
 
-This documentation is intended for:
+    Modern software systems increasingly rely on interconnected services and AI systems.
+    VirtualDocs focuses on:
 
-- Backend developers maintaining SaaS microservices or domain APIs
-- ML engineers deploying or fine-tuning GenAI models behind public endpoints
-- QA and DevOps engineers building automated test suites for infrastructure validation
-- Technical leads responsible for compliance, stability, and monitoring of live services
-
----
-
-## Core Capabilities
-
-### 1. API Test Design (YAML / SDK)
-
-- Human-readable YAML test definitions
-- Request-response validation with schema support
-- Header and body assertions
-- Status code verification
-- Custom test naming, grouping, and tagging
-
-### 2. GenAI Prompt Testing (Planned SDK / YAML Spec)
-
-- Prompt and completion structure definitions
-- Token budget constraints
-- Latency benchmarking
-- Output matching (regex, semantic match, exact string)
-- Hallucination detection workflows (planned)
-- System prompt conditioning tests
-
-### 3. Execution Environment
-
-- Environment variable support (`.env`, CI secrets)
-- Profile switching (staging, production, preview)
-- Support for test bundles and batch runs
-- CLI-based execution (planned)
-- Python SDK-based test automation
-
-### 4. Authentication
-
-- Bearer Token
-- OAuth2 with token injection
-- Dynamic token fetching via pre-request hooks
-- Header templates per environment
-
-### 5. Output & Reporting (Planned)
-
-- Terminal output with summary tables
-- JSON output for CI consumption
-- Future: HTML or markdown reports with pass/fail visualization
-- CI pipeline integration (GitHub Actions, CircleCI, GitLab, Jenkins)
+    - Testable, predictable behavior in both REST APIs and GenAI systems
+    - Regulated, auditable test processes
+    - Developer-friendly tooling for real-world workflows
 
 ---
 
-## File Structure Example
+=== "Audience"
+
+    This documentation is designed for:
+
+    - Backend engineers testing SaaS microservices
+    - ML engineers testing prompts and completions
+    - QA teams writing integration test suites
+    - DevOps teams automating validation pipelines
+
+---
+
+=== "Core Capabilities"
+
+    - YAML and SDK-based test definitions
+    - Prompt structure validation for GenAI
+    - Multi-env auth handling (token, OAuth2)
+    - Semantic and regex-based output checks
+
+---
+
+=== "File Structure"
+
+    ```
+    virtualdocs/
+    ├── tests/
+    │   ├── get-patient.yaml
+    │   ├── llm-prompt-check.yaml
+    ├── .env
+    └── mkdocs.yml
+    ```
+
+---

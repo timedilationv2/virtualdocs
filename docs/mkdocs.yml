@@ -1,0 +1,20 @@
+site_name: VirtualDocs – API and GenAI Testing for SaaS
+site_url: https://timedilationv2.github.io/virtualdocs/
+
+theme:
+  name: material
+  features:
+    - content.tabs
+extra_css:
+  - assets/stylesheets/custom.css  # Optional Helvetica override
+
+nav:
+  - Overview: index.md
+  - Healthcare Context: healthcare-context.md
+  - Getting Started: getting-started.md
+  - CLI Usage: cli-usage.md
+  - SDK Reference: sdk-reference.md
+  - Auth Handling: auth-handling.md
+  - Examples: test-examples.md
+  - Config Guide: config-guide.md
+  - FAQ: faq.md
