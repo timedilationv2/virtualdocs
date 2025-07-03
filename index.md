@@ -73,3 +73,79 @@ This documentation is intended for:
 ---
 
 ## File Structure Example
+virtualdocs/
+├── tests/
+│   ├── get-user.yaml
+│   ├── post-comment.yaml
+│   ├── llm-check-prompt.yaml
+├── .env
+└── virtualdocs.yml
+
+---
+
+## Example: REST API Test
+
+```yaml
+name: Get Patient Record
+request:
+  method: GET
+  url: https://api.healthcare-platform.com/patients/12345
+  headers:
+    Authorization: "Bearer {{ env.TOKEN }}"
+expect:
+  status: 200
+  json:
+    patient_id: "12345"
+    name: "John Doe"
+    active: true
+
+## Example: GenAI Prompt Test (Planned Syntax)
+
+name: LLM Welcome Prompt
+model: openai:gpt-4
+prompt: |
+  You are a friendly medical assistant. Greet the user and ask how you can help.
+expect:
+  contains: "Hello"
+  token_limit: 150
+  latency_ms: < 1000
+  no_hallucination:
+    disallowed_terms:
+      - cancer cure
+      - unverified treatment
+
+GEN AI
+
+Example: GenAI Prompt Test (Planned Syntax)
+
+name: LLM Welcome Prompt
+model: openai:gpt-4
+prompt: |
+  You are a friendly medical assistant. Greet the user and ask how you can help.
+expect:
+  contains: "Hello"
+  token_limit: 150
+  latency_ms: < 1000
+  no_hallucination:
+    disallowed_terms:
+      - cancer cure
+      - unverified treatment
+
+
+⸻
+
+Principles
+
+VirtualDocs is built on a few core principles:
+	1.	Predictability
+API and AI systems should not behave randomly in production. Variance should be observable and controlled.
+	2.	Readability
+Tests should be written, reviewed, and versioned like code — even by non-developers if needed.
+	3.	Portability
+All tests are environment-agnostic and execution-tool agnostic. You can run them locally or in CI.
+	4.	Observability
+Tests should not only pass or fail — they should expose why, and how they relate to previous runs.
+	5.	Privacy-Aware
+Especially in healthcare, finance, or education — test systems must respect the boundaries of production data.
+
+

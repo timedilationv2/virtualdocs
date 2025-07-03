@@ -1,0 +1,17 @@
+# Getting Started
+
+## Define a Test Case
+
+Write a `.yaml` file to define your API test:
+
+```yaml
+name: Get Patient
+request:
+  method: GET
+  url: https://api.healthcare.com/patients/321
+  headers:
+    Authorization: "Bearer {{ env.TOKEN }}"
+expect:
+  status: 200
+  json:
+    patient_id: "321"

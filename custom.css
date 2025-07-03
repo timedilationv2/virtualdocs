@@ -1,0 +1,4 @@
+/* Force Helvetica Neue on macOS-style systems */
+:root {
+  --md-text-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
