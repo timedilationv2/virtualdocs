@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#virtualdocs" class="md-skip">
+        <a href="#virtualdocs-api-and-genai-testing-for-saas-platforms" class="md-skip">
           Skip to content
         </a>
       
@@ -429,9 +429,45 @@
 
 
 
-<h1 id="virtualdocs">VirtualDocs</h1>
-<p>This is your API and GenAI testing documentation.<br />
-The homepage (<code>index.md</code>) has been restored successfully.</p>
+<h1 id="virtualdocs-api-and-genai-testing-for-saas-platforms">VirtualDocs – API and GenAI Testing for SaaS Platforms</h1>
+<p>VirtualDocs is a documentation system and execution model designed for engineering teams testing mission-critical APIs and generative AI endpoints.</p>
+<p>This documentation provides a reference framework for defining, validating, and managing tests across microservices, AI endpoints, and CI/CD environments.</p>
+<hr />
+<p>=== "Purpose"</p>
+<pre><code>Modern software systems increasingly rely on interconnected services and AI systems.
+VirtualDocs focuses on:
+
+- Testable, predictable behavior in both REST APIs and GenAI systems
+- Regulated, auditable test processes
+- Developer-friendly tooling for real-world workflows
+</code></pre>
+<hr />
+<p>=== "Audience"</p>
+<pre><code>This documentation is designed for:
+
+- Backend engineers testing SaaS microservices
+- ML engineers testing prompts and completions
+- QA teams writing integration test suites
+- DevOps teams automating validation pipelines
+</code></pre>
+<hr />
+<p>=== "Core Capabilities"</p>
+<pre><code>- YAML and SDK-based test definitions
+- Prompt structure validation for GenAI
+- Multi-env auth handling (token, OAuth2)
+- Semantic and regex-based output checks
+</code></pre>
+<hr />
+<p>=== "File Structure"</p>
+<pre><code>```
+virtualdocs/
+├── tests/
+│   ├── get-patient.yaml
+│   ├── llm-prompt-check.yaml
+├── .env
+└── mkdocs.yml
+```
+</code></pre>
 
 
 
